@@ -82,6 +82,7 @@ def get_dealerships(request, state="All"):
         endpoint = "/fetchDealers"
     else:
         endpoint = "/fetchDealers/"+state
+
     dealerships = get_request(endpoint)
     return JsonResponse({"status":200,"dealers":dealerships})
 
@@ -118,6 +119,7 @@ def add_review(request):
         return JsonResponse({"status":403,"message":"Unauthorized"})
 
 def get_cars(request):
+    print("CARSSSS")
     count = CarMake.objects.filter().count()
     print(count)
     if(count == 0):

@@ -29,7 +29,7 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS=['localhost','https://letiziabrune-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/*']
-CSRF_TRUSTED_ORIGINS=['https://letiziabrune-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/*']
+CSRF_TRUSTED_ORIGINS=['https://letiziabrune-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/*', 'https://letiziabrune-3030.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/*']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
@@ -143,4 +143,3 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/build'),
     os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
-
