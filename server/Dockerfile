@@ -23,5 +23,3 @@
     ENTRYPOINT ["/bin/bash","/app/entrypoint.sh"]
 
     CMD ["gunicorn", "--bind", ":8000", "--workers", "3", "djangoproj.wsgi"]
-
-    FROM python:3.9.18-slim-bookworm
