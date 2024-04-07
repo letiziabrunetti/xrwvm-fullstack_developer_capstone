@@ -7,12 +7,12 @@ app_name='djangoapp'
 urlpatterns = [
 
     path(route='login', view=views.login_user, name='login'),
-    path(route='logout', view=views.logout_request, 
-         name='logout_request'), 
+    path(route='logout', view=views.logout_request,
+         name='logout_request'),
     path(route='get_cars', view=views.get_cars, name='getcars'),
-    path(route='registration', view=views.registration, 
+    path(route='registration', view=views.registration,
          name='registration'),
-    path(route='get_dealers', view=views.get_dealerships, 
+    path(route='get_dealers', view=views.get_dealerships,
          name='get_dealers'),
     path(route='get_dealers/<str:state>', view=views.get_dealerships,
          name='get_dealers_by_state'),
