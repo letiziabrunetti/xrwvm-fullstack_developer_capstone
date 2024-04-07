@@ -7,8 +7,7 @@ class CarMake(models.Model):
     description = models.CharField(max_length=30)
 
     def __str__(self):
-        return f'The car make is {self.name}\n'
-               f'and the description is {self.description}'
+        return f'{self.name} - {self.description}'
 
 
 class CarModel(models.Model):
@@ -27,5 +26,4 @@ class CarModel(models.Model):
         ])
 
     def __str__(self):
-        return f'The car make is {self.name}\n'
-               f'and the type is {self.type}'
+        return f'{self.name} - {self.type}'
